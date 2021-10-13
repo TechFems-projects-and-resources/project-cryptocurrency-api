@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Coin from './Coin';
+import Coin from './component/Coin';
 
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+
   useEffect(() => {
     axios
       .get(
@@ -38,15 +39,18 @@ function App() {
       {filteredCoins.map(coin => {
         return (
           <Coin
-            key={coin.id}
-            name={coin.name}
-            price={coin.current_price}
-            symbol={coin.symbol}
+        
+             key={coin.id}
+             name={coin.name}
+             price={coin.current_price}
+             symbol={coin.symbol}
             volume={coin.total_volume}
             image={coin.image}
             priceChange={coin.price_change_percentage_24h}
             marketcap={coin.market_cap}
-            
+
+            // This is the same as writing:
+           // coin={coin}
           />
         );
       })}
