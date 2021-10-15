@@ -39,7 +39,6 @@ function App() {
       {filteredCoins.map(coin => {
         return (
           <Coin
-        
              key={coin.id}
              name={coin.name}
              price={coin.current_price}
