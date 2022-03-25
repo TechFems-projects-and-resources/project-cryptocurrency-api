@@ -36,7 +36,7 @@ A simple example looks like this:
 
 **If you would like to build this app using more values from the API**, just add more columns in the layout and fill the columns with data 
 
-**NOTE:** you can use this extension `ES7 React/Redux/GraphQL/React-Native snippets` in your VSCode to create a component automatically using the command `rface`
+**NOTE:** You can use this extension `ES7 React/Redux/GraphQL/React-Native snippets` in your VSCode to create a component automatically using the command `rface`
 
 
 ## Please note:
